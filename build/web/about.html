@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>about</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+    </head>
+    <body>
+         <div class="menuBar">
+            <table id="tab">
+                <tr id="row">
+                    <td id="col1">
+                        <a href="index.html">
+                            <img class="logo" src="imgs/logo.jpg" onmouseover="this.src='imgs/logo1.jpg'" 
+                                 onmouseout="this.src='imgs/logo.jpg'" alt=""/>
+                        </a>   
+                    </td>
+                    <td id="col2">
+                        <div class="nav">
+                        <ul>
+                        <li><a href="about.html">about</a></li>
+                        <li><a href="resume.html">resume</a></li>
+                        <li><a href="featured.html">featured</a></li>
+                        <li><a href="blog.html">blog</a></li>
+                        <li><a href="contact.html">contact</a></li>
+                        </ul>
+                        </div>
+                    </td>
+                    <td  id="col3">
+                        <p class="lab"> connect with me! </p>
+                        <a href="https://www.linkedin.com/in/anvaypradhan">
+                            <img class="img" src="imgs/linkedIn.jpg" alt=""/></a>
+                        <a href="https://www.facebook.com/anvay.pradhan.37/">
+                            <img class="img" src="imgs/Facebook1.jpg" alt=""/></a>
+                        <a href="https://twitter.com/anvay_pradhan">
+                            <img class="img" src="imgs/Twitter1.jpg" alt=""/></a>
+                        <a href="https://www.instagram.com/anvaypradhan/">
+                            <img class="img" src="imgs/Instagram1.jpg" alt=""/></a> 
+                    </td>
+                </tr>
+            </table>
+        </div> 
+        <div id="abt">
+            <!--<h1>about me</h1>
+            <h2>I'm a UX/UI Designer and Front End<br />Developer from California, USA</h2>
+            <h3>I enjoy turning complex problems into simple,<br /> 
+                beautiful and intuitive interface designs. 
+                When I'm<br />not coding or pushing pixels, 
+                you'll find me in the<br />gym or blog about food dishes.</h3>   -->
+        </div>
+        <script>
+            var request;
+if (window.XMLHttpRequest) {
+	request = new XMLHttpRequest();
+} else {
+	request = new ActiveXObject("Microsoft.XMLHTTP");
+}
+request.open('GET', 'info.json');
+request.onreadystatechange = function() {
+	if ((request.readyState===4) && (request.status===200)) {
+            var items = JSON.parse(request.responseText);
+            console.log(items);
+            var output = '<h1>' + items.name + '</h1>';
+            output += '<h2>'+ items.whoAmI + '</h2>';
+            output += '<img src="imgs/me3.jpg" alt=""/>';
+            output += '<p>'+ items.bio + '</p>';
+            output += '<p>'+ items.bio1 + '</p>';
+            output += '<p>'+ items.bio2 + '</p>';
+            output += '<p>'+ items.bio3 + '</p>';
+            output += '<p>'+ items.bio4 + '</p>';
+            document.getElementById('abt').innerHTML = output;
+	}
+    };
+request.send();
+        </script>
+        <hr>
+        <div class="gallery">
+            <h1> fotograf </h1>
+            <br>
+            <table id="tabG">
+                <tr>
+                    <td><a href="https://www.instagram.com/p/zYaWPdJYNG/?taken-by=anvaypradhan">
+                            <img src="imgs/G1.JPG" alt=""/></a></td>
+                    <td><a href="https://www.instagram.com/p/3-HY5npYJS/?taken-by=anvaypradhan">
+                            <img src="imgs/G2.JPG" alt=""/></a></td>
+                    <td><a href="https://www.instagram.com/p/0n2HRqpYGZ/?taken-by=anvaypradhan">
+                            <img src="imgs/G3.JPG" alt=""/></a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.instagram.com/p/3vr47tpYAo/?taken-by=anvaypradhan">
+                            <img src="imgs/G4.JPG" alt=""/></a></td>
+                    <td><a href="https://www.instagram.com/p/7cMYawpYH5/?taken-by=anvaypradhan">
+                            <img src="imgs/G5.JPG" alt=""/></a></td>
+                    <td><a href="https://www.instagram.com/p/_5WpzUJYO5/?taken-by=anvaypradhan">
+                            <img src="imgs/G6.JPG" alt=""/></a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.instagram.com/p/9Xdx3OpYJA/?taken-by=anvaypradhan">
+                            <img src="imgs/G7.jpg" alt=""/></a></td>
+                    <td><a href="https://www.instagram.com/p/-M1tnnpYAu/?taken-by=anvaypradhan">
+                            <img src="imgs/G8.JPG" alt=""/></a></td>
+                    <td><a href="https://www.instagram.com/p/900HuJpYJb/?taken-by=anvaypradhan">
+                            <img src="imgs/G9.JPG" alt=""/></a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.facebook.com/photo.php?fbid=10153411232898049&set=t.785022890&type=3&theater">
+                            <img src="imgs/G10.jpg" alt=""/></a></td>
+                    <td><a href="https://www.facebook.com/photo.php?fbid=10153732471133431&set=t.785022890&type=3&theater">
+                            <img src="imgs/G11.jpg" alt=""/></a></td>
+                    <td><a href="https://www.instagram.com/p/xb-ntrpYO5/?taken-by=anvaypradhan">
+                            <img src="imgs/G12.JPG" alt=""/></a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.facebook.com/photo.php?fbid=10153548405042891&set=t.785022890&type=3&theater">
+                            <img src="imgs/G13.jpg" alt=""/></a></td>
+                    <td><a href="https://www.facebook.com/photo.php?fbid=10153336234994678&set=t.785022890&type=3&theater">
+                            <img src="imgs/G14.jpg" alt=""/></a></td>
+                    <td><a href="https://www.facebook.com/photo.php?fbid=10207896715806006&set=t.785022890&type=3&theater">
+                            <img src="imgs/G15.jpg" alt=""/></a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.facebook.com/photo.php?fbid=10152793082423431&set=t.785022890&type=3&theater">
+                            <img src="imgs/G16.jpg" alt=""/></a></td>
+                    <td><a href="https://www.facebook.com/photo.php?fbid=10208383778698666&set=t.785022890&type=3&theater">
+                            <img src="imgs/G17.jpg" alt=""/></a></td>
+                    <td><a href="https://www.facebook.com/photo.php?fbid=10152597741657891&set=t.785022890&type=3&theater">
+                            <img src="imgs/G18.jpg" alt=""/></a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.instagram.com/p/xuTe98pYGt/?taken-by=anvaypradhan">
+                            <img src="imgs/G19.JPG" alt=""/></a></td>
+                    <td><a href="https://www.facebook.com/photo.php?fbid=10205425227731924&set=pcb.10205425233372065&type=3&theater">
+                            <img src="imgs/G20.jpg" alt=""/></a></td>
+                    <td><a href="https://www.instagram.com/p/ztSVvFJYEf/?taken-by=anvaypradhan">
+                            <img src="imgs/G21.jpg" alt=""/></a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.instagram.com/p/0-z-PnpYE0/?taken-by=anvaypradhan">
+                            <img src="imgs/G22.jpg" alt=""/></a></td>
+                    <td><a href=""><img src="imgs/G23.jpg" alt=""/></a></td>
+                    <td><a href="https://www.instagram.com/p/4ytPIYpYJP/?taken-by=anvaypradhan">
+                            <img src="imgs/G24.jpg" alt=""/></a></td>
+                </tr>
+            </table>
+           <!-- <a href="http://www.google.com"><img src="imgs/mitsMe.jpg" alt=""/></a>
+        <img src="imgs/car.jpg" alt=""/>
+        <a href="https://www.instagram.com/p/ztSVvFJYEfE_41BP7uHj5cy2q2S1jwEGvWPEw0/?taken-by=anvaypradhan"><img src="imgs/food.jpg" alt=""/></a>-->
+        </div>
+    </body>
+</html>
