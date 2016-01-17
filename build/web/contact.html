@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Contact</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+    </head>
+    <body>
+      <div class="menuBar">
+            <table id="tab">
+                <tr id="row">
+                    <td id="col1">
+                        <a href="index.html">
+                            <img class="logo" src="imgs/logo.jpg" onmouseover="this.src='imgs/logo1.jpg'" 
+                                 onmouseout="this.src='imgs/logo.jpg'" alt=""/>
+                        </a>   
+                    </td>
+                    <td id="col2">
+                        <div class="nav">
+                        <ul>
+                        <li><a href="about.html">about</a></li>
+                        <li><a href="resume.html">resume</a></li>
+                        <!--<li><a href="featured.html">featured</a></li>-->
+                        <li><a href="blog.html">blog</a></li>
+                        <li><a href="contact.html">contact</a></li>
+                        </ul>
+                        </div>
+                    </td>
+                    <td  id="col3">
+                        <p class="lab"> connect with me! </p>
+                        <a href="https://www.linkedin.com/in/anvaypradhan">
+                            <img class="img" src="imgs/linkedIn.jpg" alt=""/></a>
+                        <a href="https://www.facebook.com/anvay.pradhan.37/">
+                            <img class="img" src="imgs/Facebook1.jpg" alt=""/></a>
+                        <a href="https://twitter.com/anvay_pradhan">
+                            <img class="img" src="imgs/Twitter1.jpg" alt=""/></a>
+                        <a href="https://www.instagram.com/anvaypradhan/">
+                            <img class="img" src="imgs/Instagram1.jpg" alt=""/></a> 
+                    </td>
+                </tr>
+            </table>
+        </div> 
+        <div class="overlay"></div>
+        <div class="content">
+            <h1> contact me</h1>
+            <div class="sec1">
+              <img src="imgs/map.jpg" alt=""/>     
+            </div>
+            <div class="sec2">
+              <p>email me</p>
+            <div class="Subject"><textarea id="myText1" placeholder="Subject"></textarea></div>
+            <div class="msg"><textarea id="myText2" placeholder="Message"></textarea></div>
+            <div class="but"><button id="but" onclick="sendMail(); return false">Send</button></div>-->
+          </div>
+        </div>
+        <div class="contactBody"></div>
+        <script>
+                    function sendMail() {
+                    var link = "mailto:anvaypradhan@gmail.com"
+                             + "?cc=app26@pitt.edu"
+                             + "&subject=" + escape(document.getElementById('myText1').value)
+                             + "&body=" + escape(document.getElementById('myText').value);
+                    window.location.href = link;
+                    }
+                </script>
+    </body>
+</html>
