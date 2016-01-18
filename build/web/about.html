@@ -12,24 +12,24 @@ and open the template in the editor.
         <link rel="stylesheet" type="text/css" href="style.css"/>
     </head>
     <body>
-         <div class="menuBar">
+        <div class="menuBar">
             <table id="tab">
                 <tr id="row">
                     <td id="col1">
                         <a href="index.html">
-                            <img class="logo" src="imgs/logo.jpg" onmouseover="this.src='imgs/logo1.jpg'" 
-                                 onmouseout="this.src='imgs/logo.jpg'" alt=""/>
+                            <img class="logo" src="imgs/logo.jpg" onmouseover="this.src = 'imgs/logo1.jpg'" 
+                                 onmouseout="this.src = 'imgs/logo.jpg'" alt=""/>
                         </a>   
                     </td>
                     <td id="col2">
                         <div class="nav">
-                        <ul>
-                        <li><a href="about.html">about</a></li>
-                        <li><a href="resume.html">resume</a></li>
-                        <!--<li><a href="featured.html">featured</a></li>-->
-                        <li><a href="blog.html">blog</a></li>
-                        <li><a href="contact.html">contact</a></li>
-                        </ul>
+                            <ul>
+                                <li><a href="about.html">about</a></li>
+                                <li><a href="resume.html">resume</a></li>
+                                <!--<li><a href="featured.html">featured</a></li>-->
+                                <li><a href="blog.html">blog</a></li>
+                                <li><a href="contact.html">contact</a></li>
+                            </ul>
                         </div>
                     </td>
                     <td  id="col3">
@@ -54,31 +54,7 @@ and open the template in the editor.
                 When I'm<br />not coding or pushing pixels, 
                 you'll find me in the<br />gym or blog about food dishes.</h3>   -->
         </div>
-        <script>
-            var request;
-if (window.XMLHttpRequest) {
-	request = new XMLHttpRequest();
-} else {
-	request = new ActiveXObject("Microsoft.XMLHTTP");
-}
-request.open('GET', 'info.json');
-request.onreadystatechange = function() {
-	if ((request.readyState===4) && (request.status===200)) {
-            var items = JSON.parse(request.responseText);
-            console.log(items);
-            var output = '<h1>' + items.name + '</h1>';
-            output += '<h2>'+ items.whoAmI + '</h2>';
-            output += '<img src="imgs/me3.jpg" alt=""/>';
-            output += '<p>'+ items.bio + '</p>';
-            output += '<p>'+ items.bio1 + '</p>';
-            output += '<p>'+ items.bio2 + '</p>';
-            output += '<p>'+ items.bio3 + '</p>';
-            output += '<p>'+ items.bio4 + '</p>';
-            document.getElementById('abt').innerHTML = output;
-	}
-    };
-request.send();
-        </script>
+        <script src="js/aboutScript.js"></script>
         <hr>
         <div class="gallery">
             <h1> fotograf </h1>
@@ -148,9 +124,9 @@ request.send();
                             <img src="imgs/G24.jpg" alt=""/></a></td>
                 </tr>
             </table>
-           <!-- <a href="http://www.google.com"><img src="imgs/mitsMe.jpg" alt=""/></a>
-        <img src="imgs/car.jpg" alt=""/>
-        <a href="https://www.instagram.com/p/ztSVvFJYEfE_41BP7uHj5cy2q2S1jwEGvWPEw0/?taken-by=anvaypradhan"><img src="imgs/food.jpg" alt=""/></a>-->
+            <!-- <a href="http://www.google.com"><img src="imgs/mitsMe.jpg" alt=""/></a>
+         <img src="imgs/car.jpg" alt=""/>
+         <a href="https://www.instagram.com/p/ztSVvFJYEfE_41BP7uHj5cy2q2S1jwEGvWPEw0/?taken-by=anvaypradhan"><img src="imgs/food.jpg" alt=""/></a>-->
         </div>
     </body>
 </html>

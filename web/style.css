@@ -16,39 +16,39 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+    display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
 }
 ol, ul {
-	list-style: none;
+    list-style: none;
 }
 blockquote, q {
-	quotes: none;
+    quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+    content: '';
+    content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 body {
     margin-top: 50px;
-    
+
 }
 
 .menuBar {
@@ -85,19 +85,19 @@ body {
     width: 100px;
     float: left;
     //padding: 27px 35px;    
-        
+
 }
 
 
 li a{
-    
+
     text-decoration: none;
     color: whitesmoke;
 }
 
 li a:hover {
-        color: grey;
-    
+    color: grey;
+
 }
 
 #tab{
@@ -119,18 +119,18 @@ li a:hover {
 }
 
 .img:hover{
-    
+
     animation-duration: 30s; 
     animation-direction: normal;
     animation-iteration-count: 10;
     animation-fill-mode: none;
     animation-play-state: running;
-    
+
 }
 
 @keyframes shade{
 
-0% { opacity: 0.3;}
+    0% { opacity: 0.3;}
     100%{ opacity: 1.0;}
 } 
 
@@ -146,7 +146,7 @@ li a:hover {
     margin-right: 10px;
     margin-bottom: 10px;
     font-size: 150%;
-    
+
 }
 
 
@@ -166,15 +166,15 @@ li a:hover {
     margin-top: 20px;
     margin-left: 40px; 
     transition: 1s ease-in-out;
-  }
+}
 
 .imgBody img:hover{
     clip: rect(0,800px, 624px, 0);
     cursor: pointer;
     z-index: 999;
-      
-  }
-  
+
+}
+
 .imgBody2 img{
     position: absolute;
     clip: rect(0, 240px, 624px, 0);
@@ -186,16 +186,16 @@ li a:hover {
     clip: rect(0, 800px, 624px, 0);
     cursor: pointer;
     z-index: 999;
-  }
-  
+}
+
 .imgBody2 h2{ 
-   position: absolute; 
-   top: 300px; 
-   left: 70px; 
-   width: 300px;
-   font-family: "Comic Sans MS", cursive, sans-serif;
-   font-size: 40px;
-   font-weight: 900;   
+    position: absolute; 
+    top: 300px; 
+    left: 70px; 
+    width: 300px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 40px;
+    font-weight: 900;   
 }
 
 .imgBody2 h2:hover{
@@ -203,13 +203,13 @@ li a:hover {
 }
 
 .imgBody2 h3{ 
-   position: absolute; 
-   top: 350px; 
-   left: 70px; 
-   width: 300px;
-   font-family: "Comic Sans MS", cursive, sans-serif;
-   font-size: 15px;
-   font-weight: bolder;
+    position: absolute; 
+    top: 350px; 
+    left: 70px; 
+    width: 300px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 15px;
+    font-weight: bolder;
 }
 .imgBody2 h3:hover{
     color: grey;
@@ -232,16 +232,16 @@ li a:hover {
 .imgBody a:hover{
     color: grey;
 }
-  
-  
+
+
 .imgBody h3{
-   position: absolute; 
-   top: 350px; 
-   left: 900px; 
-   width: 300px; 
-   font-family: American Typewriter, Helvetica, sans-serif;
-   font-size: 15px;
-   font-weight: bolder;
+    position: absolute; 
+    top: 350px; 
+    left: 900px; 
+    width: 300px; 
+    font-family: American Typewriter, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bolder;
 }
 .imgBody h3:hover{
     color: grey;
@@ -289,6 +289,16 @@ li a:hover {
     line-height: 120%;
 }
 
+#abt h3{
+    font-family: Apple Chancery, PT sans, sans-serif;
+    font-size: 25px;
+    font-weight:500;
+    margin-top: 10px;
+    margin-left: 20px;
+    line-height: 120%;
+
+}
+
 #abt p{
     font-family: PT sans, Arial, sans-serif;
     font-size: 20px;
@@ -296,7 +306,7 @@ li a:hover {
     margin-top: 10px;
     margin-left: 20px;
     line-height: 120%;
-    
+
 }
 
 #abt img {
@@ -355,9 +365,9 @@ hr {
     width:400px;
     height: 420px;
     overflow: auto;
-    
+
     //border: 1px solid black;
-   
+
 }
 
 .gallery img{
@@ -366,31 +376,31 @@ hr {
     height: 130px;
     animation-name: expand;
     transition: height 0.4s ease-out;
-    
+
 }
 
 .gallery img:hover{
-    
+
     animation-duration: 5s;
     animation-timing-function: ease-in-out;
     animation-direction: alternate;
     animation-iteration-count: 10;
     animation-fill-mode: none;
     animation-play-state: running;
-    
+
 }
 
 @keyframes expand{
-/*  0%{
-      transform: scale(.3);
-      border-radius: 50%;
-  }  
-  
-  100%{
-      transform: scale(1);
-      border-radius: 50%;
-  }*/
-0% { opacity: 0.3;}
+    /*  0%{
+          transform: scale(.3);
+          border-radius: 50%;
+      }  
+      
+      100%{
+          transform: scale(1);
+          border-radius: 50%;
+      }*/
+    0% { opacity: 0.3;}
     100%{ opacity: 1.0;}
 } 
 
@@ -464,8 +474,8 @@ hr {
     border: 1px solid #CCC;
     animation: myanim 1s;
     transition: height 0.4s ease-out;
-    
-    
+
+
 }
 
 #update li:hover {
@@ -502,12 +512,12 @@ hr {
 }
 
 .resume{
-    
-    
+
+
 }
 
 .resume img{
-    margin-top: 40px;
+    margin-top: 30px;
     margin-left: 405px;
     height: 600px;
     border: 1px solid black;
@@ -515,7 +525,7 @@ hr {
 }
 
 .resume a{
-    margin-left: 905px;
+    margin-left: 600px;
     color: black;
     text-decoration: none;
     border: 1px solid black;
@@ -609,8 +619,8 @@ hr {
 }
 
 .msg{
-   margin-top: -70px;
-   margin-left: 5px; 
+    margin-top: -70px;
+    margin-left: 5px; 
 }
 
 #myText2{

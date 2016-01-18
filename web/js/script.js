@@ -2,7 +2,7 @@ $('#search').keyup(function(){
     var searchField = $('#search').val();
     //console.log(searchField);
     var myExp = new RegExp (searchField, "i");
-   $.getJSON('food.json', function(data){
+   $.getJSON('json/food.json', function(data){
     var output = '<ul class="searchresults">';
     $.each(data, function(key , val){
         if ((val.name.search(myExp) !== -1) || (val.dish.search(myExp)!== -1) || (val.description.search(myExp)!== -1)) {
